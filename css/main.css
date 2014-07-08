@@ -1,0 +1,58 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.header-wrapper
+{
+	background-image: url(img/header_grid.png);
+	background-color: #e7fafb;
+	background-repeat: repeat;
+	border-top: 6px solid #005b6c;
+	margin-bottom: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.mainmenu
+{
+	font-size: 22px;
+}
+
+.mainmenu ul
+{
+	list-style: none;
+}
+
+.mainmenu ul li
+{
+	display: inline;
+	float: left;
+}
+
+.mainmenu ul :first-child a
+{
+ padding: 35px  15px 0px 0px;
+}
+
+.mainmenu ul li a
+{
+	position: relative;
+	display: block;
+	color: #d52462;
+	padding: 35px  15px 0px 15px;
+}
+
+.search-box
+{
+	width: 100%;
+	padding: 25px 40px 25px 40px;
+	margin-top: 20px;
+	background-color: #008ba3;
+	color: white;
+	border: 1px solid #e7fafb;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
