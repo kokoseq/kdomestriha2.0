@@ -24,11 +24,12 @@
 					'widgetOptions'=> array(
 						'htmlOptions' => array(
 							'placeholder' => 'Zadejte adresu, město nebo název kadeřnictví',
-							'style' => 'width: 350px;',
+							'style' => 'width: 100%;',
+							'class' => 'input-lg',
 							),
 						),
 					'groupOptions' => array(
-							'class' => 'col-md-5',
+							'class' => 'col-md-6',
 						)
 					)
 				);
@@ -42,7 +43,7 @@
 					'buttonType' => 'submit',
 					'label' => 'Hledat',
 					'htmlOptions' => array(
-						'class' => 'btn-block'
+						'class' => 'btn-block btn-lg'
 					))
 		);
 		?>
@@ -51,5 +52,25 @@
 		<?php 
 		$this->endWidget();
 		?>
+	</div>
+</div>
+
+<div class='city-catalog'>
+	<div class='row'>
+			<div class='col-md-2 col-md-offset-2'>Praha</div>
+			<div class='col-md-2'>Brno</div>
+			<div class='col-md-2'>Ostrava</div>
+			<div class='col-md-2'>Plzeň</div>
+			<div class="clearfix visible-md-block"></div>
+			<div class='col-md-2 col-md-offset-2'>Olomouc</div>
+			<div class='col-md-2'>České Budějovice</div>
+			<div class='col-md-2'>Liberec</div>
+			<div class='col-md-2'>Hradec Králové</div>
+			<div class="clearfix visible-md-block"></div>
+			<div class='col-md-2 col-md-offset-2'>Zlín</div>
+			<div class='col-md-2'>Pardubice</div>
+			<div class='col-md-2'>Jilava</div>
+			<div class='col-md-2'>Ústí nad Labem</div>
+			<div class="clearfix visible-md-block"></div>
 	</div>
 </div>
