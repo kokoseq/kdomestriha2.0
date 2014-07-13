@@ -37,6 +37,19 @@ class SiteController extends Controller
 		$this->render('index', array(
 				'searchForm' => $searchForm));
 	}
+	
+	public function actionSearchResult()
+	{
+		$searchForm = new SearchForm();
+		
+		if(isset($_GET['searchText']))
+		{
+			$searchForm->searchText = $_GET['searchText'];
+		}
+		
+		$this->render('searchResult', array(
+				'searchForm' => $searchForm));
+	}
 
 	/**
 	 * This is the action to handle external exceptions.
@@ -77,7 +90,7 @@ class SiteController extends Controller
 		}
 		$this->render('contact',array('model'=>$model));
 	}
-
+	
 	/**
 	 * Displays the login page
 	 */

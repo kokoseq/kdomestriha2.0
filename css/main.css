@@ -4,6 +4,16 @@
   }
 }
 
+.no-gutter-left
+{
+	padding-left: 0px;
+}
+
+.no-gutter-right
+{
+	padding-right: 0px;
+}
+
 .header-wrapper
 {
 	background-image: url(img/header_grid.png);
@@ -15,33 +25,51 @@
 	padding-bottom: 15px;
 }
 
-.mainmenu
+#logo
+{
+	 background-image: url('img/logo.png');
+	 height: 64px;
+	 width: 296px;
+	 margin-left: 0px;
+}
+
+#mainmenu
 {
 	font-size: 22px;
+	background-color: transparent;
+  border-color: transparent;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-.mainmenu ul
+#mainmenu ul
 {
-	list-style: none;
+	padding-top: 20px;
 }
 
-.mainmenu ul li
+#mainmenu button
 {
-	display: inline;
-	float: left;
+	margin-top: 23px;
 }
 
-.mainmenu ul :first-child a
+#mainmenu ul li a
 {
- padding: 35px  15px 0px 0px;
-}
-
-.mainmenu ul li a
-{
-	position: relative;
-	display: block;
 	color: #d52462;
-	padding: 35px  15px 0px 15px;
+}
+
+#mainmenu ul li a:hover
+{
+ text-decoration: underline;
+}
+
+#mainmenu ul li:last-child > a
+{
+	 padding-right: 0px;
+}
+
+#mainmenu ul li.active > a
+{
+	background-color: transparent;
 }
 
 .search-box
@@ -57,12 +85,123 @@
 	border-radius: 5px;
 }
 
+.search-box-embeded
+{
+	margin-top: -40px;
+	width: 100%;
+	padding: 15px 40px 15px 40px;
+	background-color: #008ba3;
+	color: white;
+	border: 1px solid #e7fafb;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+}
+
 .city-catalog
 {
-  padding: 60px 0px 60px 0px;
+  padding: 60px 0px 30px 0px;
 }
 
 .city-catalog div
 {
   padding: 10px 0px 10px 0px;
+}
+
+.recent-review
+{
+	border: 1px solid #ccc;
+ 	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 0px 0px 0px 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.recent-review-heading
+{
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #ebebeb;
+	padding: 5px 15px 5px 15px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.recent-review-text
+{
+	padding: 5px 15px 5px 15px;
+}
+
+.footer
+{
+	margin-top: 40px;
+	clear: both;
+	overflow: hidden;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 35px;
+	height: 150px;
+	background-color: #005b6c;
+	border-top: 5px solid #90c7d1;
+	width: 100%;
+}
+
+.salon-search-listing
+{
+	border-bottom: 1px solid #ccc;
+ 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+}
+
+.salon-search-listing-photo img
+{
+	 width: 100px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.salon-search-listing-description h4
+{
+	margin-top: 0px;
+}
+
+.salon-search-listing-last-review
+{
+	padding-top: 8px;
+}
+
+.reset-padding
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.reset-margin
+{
+	margin: 0px 0px 0px 0px;
+}
+
+.salon-search-listing-last-review blockquote
+{
+	font-style: italic;
+	color: #8b9ba1;
+	font-size: 14px;
+	border-left: none;
+	padding: 5px 0px 5px 0px;
+}
+
+.btn-salon-add
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.star-rating
+{
+
 }
